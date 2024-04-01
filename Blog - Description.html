@@ -20,7 +20,7 @@
                     </div>
                     <div class="menu-2">
                         <ul>
-                            <li class="active"><a href="home.html">Home</a></li>
+                            <li class="active"><a href="index.html">Home</a></li>
                             <li><a href="services.html">Services</a></li>
                             <li><a href="blog.html">Blog</a></li>
                             <li><a href="about.html">About Us</a></li>
@@ -33,7 +33,7 @@
                 </div>
                 <div class="menu">
                     <ul class="flex">
-                        <li class="active1"><a href="home.html">Home</a></li>
+                        <li class="active1"><a href="index.html">Home</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="about.html">About Us</a></li>
@@ -127,7 +127,7 @@
                             <div class="f-menu">
                                 <h4>Wiley Productions</h4>
                                 <ul class="hide-acc">
-                                    <li><a href="home.html">Home</a></li>
+                                    <li><a href="index.html">Home</a></li>
                                     <li><a href="contect.html">Contect us</a></li>
                                     <li><a href="blog.html">Blog</a></li>
                                     <li><a href="about.html">about us</a></li>
@@ -154,6 +154,22 @@
             </div>
         </div>
     </footer>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                var t = $(window).scrollTop()
+                // $('.pos-fix').html(t)
+                if (t > 650) {
+                    $('header').addClass('header_animate')
+                    $('.top-header').addClass('box-shadow')
+                }
+                else {
+                    $('header').removeClass('header_animate')
+                }
+            })
+        })
+    </script>
     <script>
         let hidemenu=document.getElementsByClassName('hide_menu');
 
