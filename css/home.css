@@ -136,10 +136,7 @@ li {
 
 header {
     position: relative;
-    /* width: 100%; */
     margin: 10px;
-    /* top: 0; */
-    /* left: 0; */
     z-index: 99;
 }
 
@@ -1357,7 +1354,7 @@ footer {
 
     .section1 h2 {
         margin-top: 40px;
-        font-size: 30px;
+        font-size: 18px;
         line-height: 44px
     }
 
@@ -1374,7 +1371,9 @@ footer {
 }
 
 @media (max-width: 576px) {
-
+    .hero-info{
+        padding-bottom: 20px;
+    }
     .container {
         max-width: 540px;
     }
